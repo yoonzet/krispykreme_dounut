@@ -9,9 +9,11 @@ $(document).ready(function () {
   
   var ani01 = gsap.from('.hotnow', {
     opacity: 0,
+    x:-300,
   });
   var ani02 = gsap.from('.group-order', {
     opacity: 0,
+    x:300,
   });
 
   var timeLine = gsap.timeline();
@@ -23,7 +25,7 @@ $(document).ready(function () {
     triggerElement: '.cont',
     triggerHook: 1,
     offset: 100,
-    duration: "100%",
+    duration: "0",
   });
   
   scene01.setTween(timeLine);
