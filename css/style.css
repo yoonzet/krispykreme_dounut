@@ -761,7 +761,7 @@ a {
     font-size: 1.2vw;
     color: white;
     white-space: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 .lotte-eatz .more-box {
@@ -895,8 +895,6 @@ a {
 
 
 /* *******    footer start   ******* */
-.sns>.sns-wrap {}
-
 .sns .icon-wrap {
     display: flex;
     justify-content: center;
@@ -940,7 +938,7 @@ a {
 
 .footer-wrap>.footer-bg {
     width: 100%;
-    height: 25vh;
+    height: 250px;
     background-color: #F2F2F2;
     position: absolute;
     bottom: 0;
@@ -1340,16 +1338,17 @@ a {
 
     /* 600 < event >  */
     .event .title-red {
-        font-size: 7vw;
+        top: 10%;
+        font-size: 5vw;
     }
 
     .event .box-wrap {
         width: 100%;
-        transform: translateX(3%);
+        transform: translateX(9%);
     }
 
     .event .box-wrap>.box {
-        width: 90%;
+        width: 70%;
     }
 
     .event .box02,
@@ -1363,6 +1362,7 @@ a {
 
     .lotte-eatz {
         width: 100%;
+        height: 15vh;
     }
 
     .lotte-eatz>.red-box>.txt-wrap {
@@ -1463,16 +1463,29 @@ a {
 
     /* 600 < footer >  */
     .sns .icon-wrap>i {
-        font-size: 8vw;
+        font-size: 5vw;
         padding: 0 2vw;
+    }
+    .sns .img-wrap>.box-wrap>.box {
+        width: 15vh;
+        max-width: 200px;
+        overflow: hidden;
+        cursor: pointer;
     }
 
     .footer-nomal{
         display: none;
     }
+   
     .footer-mobile{
         display: block;
         margin-top: 25px;
+    }
+    .footer-wrap>.footer-bg {
+        height: 190px;
+        background-color: #F2F2F2;
+        position: absolute;
+        bottom: 0;
     }
     .footer-wrap .footer-bg>.footer-mobile>ul>li {
         text-align: center;
@@ -1483,6 +1496,9 @@ a {
     .footer-wrap .footer-bg>.footer-mobile>.img-box{
         display: flex;
         justify-content: center;
+    }
+    .footer-wrap .footer-bg>.footer-mobile>.img-box>img{
+        width: 17vw;
     }
 
 
