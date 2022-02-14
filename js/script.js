@@ -32,5 +32,14 @@ $(document).ready(function () {
   scene01.addTo(controller);
   // scene01.addIndicators();
 
+  // menu-mobile
+  $(".bar-icon").click(function(){
+    $(".menu-mobile-wrap").addClass("active");
+  });
+
+  $(".exit-icon").click(function(){
+    $(".menu-mobile-wrap").toggleClass("active");
+  });
+
 
 });
