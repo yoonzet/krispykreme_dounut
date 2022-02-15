@@ -474,13 +474,13 @@ a {
 }
 
 .product .slide .title-wrap>p {
-    font-size: 1vw;
+    font-size: 16px;
     line-height: 30px;
     color: #D0142E;
 }
 
 .title-red {
-    font-size: 2vw;
+    font-size: 35px;
     font-weight: 900;
     color: #D0142E;
 }
@@ -636,13 +636,19 @@ a {
     background-size: cover;
 } */
 .event .title-red {
-    font-size: 50px;
+    /* font-size: 50px; */
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    text-align: center;
     /* color: #fff; */
+}
+.event .title-red>p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 .event .box-wrap {
@@ -654,14 +660,24 @@ a {
 }
 
 .event .box-wrap>.box {
-    width: 20vw;
-    min-width: 150px;
-    margin-right: 3vw;
+    width: 23vw;
+    min-width: 200px;
+    margin-right: 2vw;
     cursor: pointer;
 }
 
 .event .box-wrap>.box:last-child {
     margin-right: 0px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+.event .box-wrap>.box:last-child:hover{
+    background-color: #ddd8;
+    color: #444;
 }
 
 .event .box>img {
@@ -736,9 +752,27 @@ a {
     transform: translate(-50%, -50%);
     transition: 0.7s;
 }
+.lotte-eatz>.red-box>.logo>img{
+    animation-name: logo-updown;
+    animation-duration: 0.5s;
+    animation-duration: leaner;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes logo-updown {
+    0% {
+        top: 48%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
 
 .lotte-eatz:hover>.red-box>.logo>img {
     left: 0;
+    animation-iteration-count: 0;
 }
 
 .lotte-eatz>.red-box>.txt-wrap {
@@ -769,7 +803,7 @@ a {
 /* *******    event end   ******* */
 /* *******    cont start   ******* */
 
-.cont {
+.content{
     position: relative;
 }
 
@@ -783,7 +817,7 @@ a {
     left: 15vw;
 }
 
-.cont-nomal .cont-top .cont-wrap {
+.cont-nomal .cont .cont-wrap {
     width: 80vw;
     height: 20vw;
     max-height: 350px;
@@ -794,8 +828,8 @@ a {
 .cont-nomal .cont-wrap .circle {
     width: 20vw;
     height: 20vw;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     background-color: #4C9267;
     position: absolute;
@@ -803,7 +837,7 @@ a {
 
 .cont-nomal .cont-wrap .cont-img>img {
     width: 30vw;
-    max-width: 550px;
+    max-width: 450px;
     position: absolute;
     transform: translate(15%, -25%);
 }
@@ -852,11 +886,11 @@ a {
 /* cont-bottom */
 .cont-nomal .cont-bottom {
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     right: 15vw;
 }
 
-.cont-nomal .cont-bottom .cont-wrap {
+.cont-nomal .cont .cont-wrap {
     width: 80vw;
     height: 20vw;
     max-height: 350px;
@@ -880,7 +914,7 @@ a {
 
 .cont-nomal .cont-bottom .cont-wrap .cont-img>img {
     right: 0;
-    transform: translate(0%, -25%);
+    transform: translate(0%, -15%);
 }
 
 .cont-nomal .cont-bottom .txt-wrap>.more-box-wrap {
@@ -1018,13 +1052,10 @@ a {
         position: absolute;
         white-space: nowrap;
         left: -100%;
-        opacity: 0;
         transition: 1s;
     }
     .top-bar .menu-mobile-wrap.active{
         left: 0%;
-        opacity: 1;
-
     }
     .top-bar .menu-mobile-wrap>.exit-icon{
         position: absolute;
@@ -1180,7 +1211,7 @@ a {
     }
 
     .product .slide .title-wrap>h1 {
-        font-size: 5vw;
+        font-size: 30px;
     }
 
     .product .slide .menu03 {
@@ -1241,7 +1272,7 @@ a {
 
     /* 1050 < event >  */
     .event .title-red {
-        font-size: 4vw;
+        font-size: 30px;
     }
 
     .event .box-wrap {
@@ -1252,7 +1283,7 @@ a {
         width: 30vw;
     }
 
-    .event .box04 {
+    .event .box03 {
         display: none;
     }
 
@@ -1287,6 +1318,10 @@ a {
 @media (max-width:600px) {
     .top-bar {
         height: 80px;
+    }
+    .top-bar>.logo {
+        margin-left: 0;
+        right: -3%;
     }
     .top-bar>.logo>img {
         width: 10vh;
@@ -1388,6 +1423,7 @@ a {
 
     .product .slide .title-wrap>h1 {
         font-size: 6vw;
+        white-space: nowrap;
     }
 
     .product .slide .menu01 {
@@ -1399,7 +1435,7 @@ a {
         transform: translate(-50%, 150%);
     }
 
-    .product .slide .menu img {
+    .product .slide .menu img{
         width: 25vh;
         cursor: pointer;
     }
@@ -1411,6 +1447,7 @@ a {
     .product .slide .menu:hover>.menu-wrap>img {
         width: 25vh;
         transform: translate(0%, 0%)rotate(0deg);
+        transform: scale(105%);
     }
 
     .product .slide .menu:hover>.menu-wrap>p {
@@ -1420,7 +1457,7 @@ a {
     /* 600 < event >  */
     .event .title-red {
         top: 10%;
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .event .box-wrap {
