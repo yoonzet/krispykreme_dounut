@@ -151,12 +151,12 @@ a {
 .top-bar>.menu-wrap>ul>li:hover>ul>li {
     line-height: 30px;
     display: block;
-    color: #0008;
+    color: #222;
     font-weight: 400;
 }
 
 .top-bar>.menu-wrap>ul>li:hover>ul>li:hover {
-    color: #000;
+    color: #777;
 }
 
 
@@ -192,7 +192,7 @@ a {
 
 /* ( 공통 )more-box */
 .more-box {
-    width: 200px;
+    width: 180px;
     height: 30px;
     border: 1px solid #fff;
     color: white;
@@ -217,47 +217,57 @@ a {
 
 /* slide01 시작   ***** */
 .main-vs .slide01 {
-    background-color: #4c9167;
+    background: #cdbba244;
     position: relative;
     overflow: hidden;
 }
-
-.main-vs .slide01 .content>.box {
-    background-color: #fff3;
+.main-vs .slide01 .content{
+    width: 75vw;
     position: absolute;
-    right: 8%;
-    bottom: 10%;
-    border: 1px solid #fff;
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-vs .slide01 .content>.img-box {
+    width: 45vw;
+}
+
+.main-vs .slide01 .content>.img-box img {
+    width: 100%;
+}
+
+.main-vs .slide01 .content>.txt-box {
+    width: 30vw;
+    height: 28vw;
+    /* background-color: #fff9; */
+    /* border: 1px solid #fff; */
+    color: #694501;
     padding: 0 4vw;
     box-sizing: border-box;
 }
 
 .main-vs .slide01 .txt-wrap>p {
     font-family: 'HS-Regular';
-}
-
-.main-vs .slide01 .txt-wrap>.p1 {
-    margin-top: 5vw;
-    font-size: 3vw;
-}
-
-.main-vs .slide01 .txt-wrap>.p2 {
-    font-size: 4vw;
-    margin-bottom: 20px;
+    line-height: 7vw;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    white-space: nowrap;
+    color: #fb8702;
 }
 
 .main-vs .slide01 .txt-wrap>span {
     font-family: 'Cafe24Ssurround';
-    line-height: 60px;
+    line-height: 4vw;
+    white-space: nowrap;
 }
 
 .main-vs .slide01 .txt-wrap>.s1 {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .main-vs .slide01 .txt-wrap>.s2 {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .main-vs .slide01 .more-box {
@@ -267,39 +277,22 @@ a {
 .main-vs .slide01 .txt-wrap02 {
     display: none;
 }
-
-.main-vs .slide01 .content>.img-box {
-    width: 50%;
-    height: 630px;
-    position: absolute;
-    transform: translateY(-45%);
-    left: 10%;
-    animation-name: main01-img;
-    animation-duration: 1s;
-    animation-duration: leaner;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+.slide01 .more-box {
+    /* background-color: #694501; */
+    border: 1px solid #694501;
+    color: #694501;
+    margin: 30px 0;
 }
 
-@-webkit-keyframes main01-img {
-    0% {
-        opacity: 0%;
-        top: 60%;
-    }
+.slide01 .more-box:hover {
+    background-color: #694501;
+    color: #fff;
 
-    100% {
-        top: 50%;
-    }
-}
-
-.main-vs .slide01 .content>.img-box img {
-    width: 100%;
 }
 
 /* slide02 시작    ***/
 .main-vs .slide02 {
-    background-color: #CDBBA2;
+    background-color: #cdbba28a;
 }
 
 .main-vs .slide02 .content {
@@ -353,6 +346,17 @@ a {
     transform: translateX(-50%);
     margin-top: 47%;
 }
+.slide02 .more-box {
+    background-color: #166936;
+    border: 0px solid #999;
+    color: #fff;
+}
+
+.slide02 .more-box:hover {
+    background-color: #1669368c;
+    color: #fff;
+
+}
 
 /* main-vs   >   slide03 시작    */
 
@@ -366,7 +370,6 @@ a {
     position: relative;
     overflow: hidden;
 }
-
 .main-vs .slide03 .donut {
     width: 50vw;
     height: 40vw;
@@ -1111,20 +1114,11 @@ a {
     
     /*  1050 main-vs  >  slide01 시작  */
 
-    .main-vs .slide01 .content {
-        width: 100%;
-        height: 90vw;
-        position: relative;
-        transform: translateY(10%);
-    }
-
     .main-vs .slide01 .content>.img-box {
-        height: 80vw;
-    }
-
-    .main-vs .slide01 .content>.img-box>img {
+        width: 60vw;
         position: absolute;
-        transform: translateX(30%);
+        left: 50%;
+        transform: translate(-50%, -50%)
     }
 
     .main-vs .slide01 .content>.box {
@@ -1137,20 +1131,17 @@ a {
 
     .main-vs .slide01 .txt-wrap02 {
         display: block;
-        left: 0%;
-        top: 40%;
-        transform: translateX(35%);
+        left: 50%;
+        transform: translate(-50%, 120%);
         position: absolute;
         text-align: center;
-        color: white;
-        line-height: 50px;
+        color: #694501;
+        line-height: 5vw;
     }
 
     .main-vs .slide01 .txt-wrap02>p {
         font-family: 'HS-Regular';
-    }
-
-    .main-vs .slide01 .txt-wrap02>.p1 {
+        color: #fb8702;
         font-size: 3vw;
         line-height: 9vw;
     }
@@ -1158,6 +1149,7 @@ a {
     .main-vs .slide01 .txt-wrap02>span {
         font-family: 'Cafe24Ssurround';
         line-height: 2vw;
+        white-space: nowrap;
     }
 
     .main-vs .slide01 .txt-wrap02>.s1 {
@@ -1198,11 +1190,11 @@ a {
     }
 
     .main-vs .slide02 .content>.box>.txt-img>img {
-        width: 120%;
+        width: 100%;
     }
 
     .main-vs .slide02 .more-box-wrap {
-        padding-top: 50px;
+        padding-top: 5vw;
     }
 
     /* 1050 < product >  */
@@ -1345,67 +1337,12 @@ a {
         font-size: 30px;
     }
 
-    .main-vs .slide01 .content {
-        transform: translateY(-10%);
-    }
 
-    .main-vs .slide01 .content>.img-box>img {
-        width: 70vw;
-        position: absolute;
-        transform: translateX(6%);
-    }
-
-    .main-vs .slide01 .txt-wrap02 {
-        width: 100%;
-        display: block;
-        left: -4%;
-        top: 60%;
-    }
-
-    .main-vs .slide01 .txt-wrap {
-        display: none;
-    }
-
-
-    .main-vs .slide01 .txt-wrap02>.p1 {
-        font-size: 5vw;
-        line-height: 80px;
-    }
-
-    .main-vs .slide01 .txt-wrap02>.s1 {
-        font-size: 5.5vw;
-    }
-
-    .main-vs .slide01 .txt-wrap02>.s2 {
-        font-size: 16px;
-    }
 
     /* 600 main-vs >  slide03 시작 */
-    .main-vs .slide03 {
-        background-color: #EA8694;
+    .main-vs .slide03 .more-box-wrap {
+        bottom: -10%;
     }
-
-    .main-vs .slide03 .bg-pink {
-        display: none;
-    }
-
-    .main-vs .slide03 .txt-wrap02 {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .main-vs .slide03 .txt-wrap02>img {
-        width: 100%;
-        margin-bottom: 100px;
-    }
-
-    .main-vs .slide03 .donut {
-        display: none;
-    }
-
 
 
     /* 600 < product >  */

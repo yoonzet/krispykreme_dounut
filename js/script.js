@@ -40,6 +40,6 @@ $(document).ready(function () {
   $(".exit-icon").click(function(){
     $(".menu-mobile-wrap").toggleClass("active");
   });
-
+ 
 
 });
