@@ -32,7 +32,35 @@ $(document).ready(function () {
   scene01.addTo(controller);
   // scene01.addIndicators();
 
-  // menu-mobile
+
+// 슬릭슬라이더
+  $(".slider").slick({
+  });
+  // 네비버튼-페이지연결
+  $(".nav-btn > ul > li").click(function(){
+    var indexNum = $(this).index();
+    $(".slider").slick("slickGoTo" , indexNum )
+  });
+  // 네비버튼-스위치배경전환
+  $(".nav-btn > ul > li").click(function(){
+    $(this).addClass("bg");
+    $(".nav-btn > ul > li").not(this).removeClass("bg");
+  });
+
+
+
+//  // 메인비쥬얼 하단 슬라이드버튼 
+//   $(".btn").click(function(){
+//     $(this).addClass("active");
+//     $(".btn").not(this).removeClass("active");
+//   });
+
+//   $(".btn").click(function(){
+//     $(".fp-slide").addClass('active');
+//   });
+
+
+  // 태블릿,모바일 버젼 메뉴아이콘 클릭
   $(".bar-icon").click(function(){
     $(".menu-mobile-wrap").addClass("active");
   });
@@ -40,6 +68,8 @@ $(document).ready(function () {
   $(".exit-icon").click(function(){
     $(".menu-mobile-wrap").toggleClass("active");
   });
+
+  
  
 
 });
