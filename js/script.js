@@ -33,8 +33,8 @@ $(document).ready(function () {
   // scene01.addIndicators();
 
 
-// 슬릭슬라이더
-  $(".slider").slick({
+// <  product slider  >
+  $(".product-slider").slick({
   });
   // 네비버튼-페이지연결
   $(".nav-btn > ul > li").click(function(){
@@ -45,6 +45,13 @@ $(document).ready(function () {
   $(".nav-btn > ul > li").click(function(){
     $(this).addClass("bg");
     $(".nav-btn > ul > li").not(this).removeClass("bg");
+  });
+
+  // <  event slider  >
+  $(".event-slider").slick({
+    autoplay:true,
+    arrows:true,
+    dots:true,
   });
 
 

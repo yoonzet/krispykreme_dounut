@@ -303,13 +303,12 @@ a {
 }
 .slide01 .more-box {
     /* background-color: #694501; */
-    border: 1px solid #694501;
-    color: #694501;
+    background-color: #694501;
     margin: 30px 0;
 }
 
 .slide01 .more-box:hover {
-    background-color: #694501;
+    background-color: #69450199;
     color: #fff;
 
 }
@@ -522,7 +521,7 @@ a {
     z-index: -1;
     color: #fff;
 }
-.product .slider .content-product{
+.product .content-product{
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -631,6 +630,8 @@ a {
     display: block;
     width: 18vw;
     height: 18vw;
+    min-width: 250px;
+    min-height: 250px;
     border-radius: 100%;
     background-color: #fff;
     box-shadow: 0px 0px 18px 6px #ddd5;
@@ -695,11 +696,10 @@ a {
 
 /* *******    product end   ******* */
 /* *******    event start   ******* */
-/* .event{
-    background-image: url("https://www.krispykreme.com/App_Themes/krispykremenew/Content/images/shop/doughnut_background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
+.event-slider{
+    display: none;
+}
 .event .title-red {
     /* font-size: 50px; */
     position: absolute;
@@ -733,16 +733,16 @@ a {
 
 .event .box-wrap>.box:last-child {
     margin-right: 0px;
-    background-color: #ddd;
+    border: 1px solid #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    color: #D0142E;
 }
 .event .box-wrap>.box:last-child:hover{
-    background-color: #ddd8;
-    color: #444;
+    color: #D0142E88;
 }
 
 .event .box>img {
@@ -819,7 +819,7 @@ a {
 }
 .lotte-eatz>.red-box>.logo>img{
     animation-name: logo-updown;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-duration: leaner;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -827,11 +827,13 @@ a {
 }
 @-webkit-keyframes logo-updown {
     0% {
-        top: 48%;
+        /* top: 48%; */
+        /* transform: scale(100%); */
     }
 
     100% {
-        top: 50%;
+        /* top: 50%; */
+    height: 95%;
     }
 }
 
@@ -1262,7 +1264,7 @@ a {
     /* 1050 < product >  */
     .product .nav-btn{
         width: 60vw;
-        min-width: 450px;
+        min-width: 300px;
     }
     .product .title-wrap>p {
         font-size: 2vw;
@@ -1341,11 +1343,11 @@ a {
         width: 30vw;
     }
 
-    .event .box03 {
+    .event .box-wrap .box03 {
         display: none;
     }
 
-    .event .box>.box-hover>p {
+    .event .box-wrap .box>.box-hover>p {
         font-size: 1.5vw;
         line-height: 2.5vw;
     }
@@ -1402,8 +1404,27 @@ a {
     .fp-controlArrow.fp-next::before {
         font-size: 30px;
     }
+    /* 600 main-vs >  slide01  */
 
+    .main-vs .slide01 .content>.img-box {
+        transform: translate(-50%, -60%)
+    }
+    .main-vs .slide01 .txt-wrap02 {
+        transform: translate(-50%, 90%);
+    }
 
+    .main-vs .slide01 .txt-wrap02>p {
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+    .main-vs .slide01 .txt-wrap02>.s1 {
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+    
+    .main-vs .slide01 .txt-wrap02>.s2 {
+        font-size: 3.5vw;
+    }
 
     /* 600 main-vs >  slide03 시작 */
     .main-vs .slide03 .more-box-wrap {
@@ -1412,8 +1433,13 @@ a {
 
 
     /* 600 < product >  */
+    .product .nav-btn{
+        height: 40px;
+        bottom: 5%;
+    }
     .product .nav-btn>ul>li{
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 40px;
     }
     .product .title-wrap {
         position: absolute;
@@ -1463,30 +1489,22 @@ a {
     }
 
     /* 600 < event >  */
-    .product .nav-btn{
-        bottom: 5%;
-    }
+ 
     .event .title-red {
         top: 10%;
         font-size: 6vw;
     }
-
-    .event .box-wrap {
-        width: 100%;
-        transform: translateX(9%);
+    .event .box-wrap{
+        display: none;
     }
-
-    .event .box-wrap>.box {
+    .event  .event-slider {
+        display: block;
         width: 70%;
+        margin: 0 auto;
     }
 
-    .event .box02,
-    .box03 {
-        display: none;
-    }
-
-    .event .box>.box-hover {
-        display: none;
+    .event  .event-slider .box {
+        width: 25vw;
     }
 
     .lotte-eatz {
