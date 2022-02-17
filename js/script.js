@@ -39,7 +39,7 @@ $(document).ready(function () {
   // 네비버튼-페이지연결
   $(".nav-btn > ul > li").click(function(){
     var indexNum = $(this).index();
-    $(".slider").slick("slickGoTo" , indexNum )
+    $(".product-slider").slick("slickGoTo" , indexNum )
   });
   // 네비버튼-스위치배경전환
   $(".nav-btn > ul > li").click(function(){

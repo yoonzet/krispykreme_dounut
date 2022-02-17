@@ -129,6 +129,26 @@ a {
     font-size: 14px;
     line-height: 60px;
 }
+.top-bar>.menu-wrap>ul>li::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #166936;
+    margin: 0 auto;
+    transform: translateY(-500%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.top-bar>.menu-wrap>ul>li:last-child::after{
+    display: none;
+}
+
+.top-bar>.menu-wrap>ul>li:hover::after{
+    transform: translateY(-650%);
+    opacity: 1;
+}
 
 .login {
     font-weight: 600;
@@ -156,7 +176,7 @@ a {
 }
 
 .top-bar>.menu-wrap>ul>li:hover>ul>li:hover {
-    color: #777;
+    color: #4c9167;
 }
 
 
