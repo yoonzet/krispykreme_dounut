@@ -888,7 +888,7 @@ a {
 
 
 /* *******    event end   ******* */
-/* *******    cont start   ******* */
+/* *******    content start   ******* */
 
 .content{
     position: relative;
@@ -938,7 +938,6 @@ a {
 }
 
 .cont-nomal .cont-wrap .txt-wrap>h1 {
-    font-family: 'NanumBarunGothic';
     color: #166936;
     font-size: 36px;
 }
