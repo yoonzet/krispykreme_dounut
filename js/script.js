@@ -43,8 +43,8 @@ $(document).ready(function () {
   });
   // 네비버튼-스위치배경전환
   $(".nav-btn > ul > li").click(function(){
-    $(this).addClass("bg");
-    $(".nav-btn > ul > li").not(this).removeClass("bg");
+    $(this).addClass("active");
+    $(".nav-btn > ul > li").not(this).removeClass("active");
   });
 
   // <  event slider  >
