@@ -601,21 +601,21 @@ a {
 
 /* product 애니매이션효과   */
 .product .menu {
-    animation-name: updown;
-    animation-duration: 1s;
+    animation-name: upDown;
+    animation-duration: 0.8s;
     animation-duration: leaner;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes updown {
+@-webkit-keyframes upDown {
     0% {
-        top: 19%;
+        transform: translateY(1.5%);
     }
 
     100% {
-        top: 20%;
+        /* top: 20%; */
     }
 }
 
@@ -655,7 +655,7 @@ a {
 }
 
 .product .menu:hover .circle {
-    margin-left: 25%;
+    margin-left: 65%;
 }
 
 .product .menu03:hover .circle {
