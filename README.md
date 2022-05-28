@@ -9,8 +9,8 @@ Html, css, jQuery 기반의 리뉴얼 웹사이트 입니다.
 ### 사용 기술
 
 - 미디어쿼리를 이용한 반응형 UI 마크업
-- 애니매이션효과를 이용한 생동감있는 이미지표현
-- 라이브러리 활용
+- key frame을 이용한 생동감있는 이미지표현
+- 라이브러리 활용(JQuery)
   - full page
   - slick slide
   - scroll magic
